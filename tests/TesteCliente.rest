@@ -11,7 +11,7 @@ content-type: application/json
 {
 "nome" : "Luciano Coelho",
 "cpf" : "1",
-"telefone" : "tel2383738",
+"telefone" : "tel2383738"
 }
 
 ### Verbo PUT – atualiza
@@ -21,7 +21,7 @@ content-type: application/json
 {
 "nome" : "Vitor Henrique Cenatti",
 "cpf" : "1",
-"telefone" : "tel2383738",
+"telefone" : "tel2383738"
 }
 
 ### Verbo DELETE - excluir

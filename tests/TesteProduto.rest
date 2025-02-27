@@ -12,7 +12,7 @@ content-type: application/json
 
     "nome": "Produto Exemplo",
     "foto": "iVBORw0KGgoAAAANSUhEUgAA...",
-    "valor_unitario": "99.99"
+    "valor_unitario": 99.99
 }
 
 ### Verbo PUT – atualiza
