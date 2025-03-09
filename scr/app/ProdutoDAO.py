@@ -38,7 +38,7 @@ async def post_produto(corpo: Produto):
     try:
         session = db.Session()
         # cria um novo objeto com os dados da requisição
-        dados = ProdutoDB(None, corpo.nome, corpo.cpf, corpo.telefone)
+        dados = ProdutoDB(None, corpo.nome_produto, corpo.descricao, corpo.foto, corpo.valor_unitario)
 
         session.add(dados)
         # session.flush()
@@ -58,10 +58,11 @@ async def put_produto(id: int, corpo: Produto):
         # busca os dados atuais pelo id
         dados = session.query(ProdutoDB).filter(ProdutoDB.id_produto == id).one()
         # atualiza os dados com base no corpo da requisição
-        dados.nome = corpo.nome
-        dados.cpf = corpo.cpf
-        dados.telefone = corpo.telefone
-       
+        dados.nome_produto = corpo.nome_produto
+        dados.descricao = corpo.descricao
+        dados.foto = corpo.foto
+        dados.valor_unitario = corpo.valor_unitario
+    
         session.add(dados)
         session.commit()
        
