@@ -1,5 +1,6 @@
 @token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhYmMiLCJleHAiOjE3NDIwNjkwMzZ9.C2b-mh_aDcF51htJURGOCxp8NoTHEp3SDnKcp3MGoZ8
 
+
 ### Verbo GET – listar todos
 GET http://localhost:8000/cliente/ HTTP/1.1
 Authorization: Bearer {{token}}

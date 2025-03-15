@@ -2,6 +2,8 @@ from fastapi import FastAPI
 from settings import HOST, PORT, RELOAD
 import uvicorn
 
+#Vitor Henrique Cenatti
+
 # import das classes com as rotas/endpoints
 import security
 from app import FuncionarioDAO
