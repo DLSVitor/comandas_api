@@ -1,4 +1,7 @@
 import logging
+from typing import Annotated
+from fastapi import Depends
+from security import get_current_active_user, User
 
 from fastapi import APIRouter, HTTPException
 from domain.entities.Funcionario import Funcionario
@@ -6,7 +9,7 @@ from domain.entities.Funcionario import Funcionario
 import db
 from infra.orm.FuncionarioModel import FuncionarioDB
 
-router = APIRouter()
+router = APIRouter(dependencies=[Depends(get_current_active_user)])
 
 # Criar as rotas/endpoints: GET, POST, PUT, DELETE
 
@@ -16,6 +19,7 @@ async def get_funcionario():
         session = db.Session()
         # busca todos
         dados = session.query(FuncionarioDB).all()
+
 
         return dados, 200
     
