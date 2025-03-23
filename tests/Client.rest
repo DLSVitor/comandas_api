@@ -1,5 +1,4 @@
-@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhYmMiLCJleHAiOjE3NDIwNjkwMzZ9.C2b-mh_aDcF51htJURGOCxp8NoTHEp3SDnKcp3MGoZ8
-
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhYmMiLCJleHAiOjE3NDI3NzUxMjB9.7clKdnmkttaxVAquJv4iynkL42fkz6eRAtDeqUvjzbE
 
 ### ao logar, gera um token que deve ser usado para acessar as rotas da API
 curl    -X 'POST' 'http://127.0.0.1:8000/token' \
