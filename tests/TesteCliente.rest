@@ -1,5 +1,4 @@
-@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhYmMiLCJleHAiOjE3NDIwNjkwMzZ9.C2b-mh_aDcF51htJURGOCxp8NoTHEp3SDnKcp3MGoZ8
-
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhYmMiLCJleHAiOjE3NDI3NzUxMjB9.7clKdnmkttaxVAquJv4iynkL42fkz6eRAtDeqUvjzbE
 
 ### Verbo GET – listar todos
 GET http://localhost:8000/cliente/ HTTP/1.1
